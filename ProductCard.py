@@ -120,6 +120,7 @@ class ProductCard:
 
         except ValueError:
             print("Ошибка! ID должен быть целым числом")
+            
         else:
             self.__id = id
             print('✔')
@@ -144,7 +145,7 @@ class ProductCard:
         try:
             quantity = int(quantity)
 
-            if quantity >= 0:
+            if quantity > 0:
                 self.__quantity = quantity
                 print('✔')
             else:
